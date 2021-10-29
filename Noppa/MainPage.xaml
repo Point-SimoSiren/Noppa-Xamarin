@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Noppa.MainPage">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/Tyyli.css" />
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame StyleClass="frame">
+            <Label Text="Suomi Noppa" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Label x:Name="numeroLabel" FontSize="Title" Padding="30,10,30,10"/>
+
+        <Button Text="Heitä noppaa" Clicked="Button_Clicked" />
+
+        <Label Text="Nopan silmäluku" FontSize="Title" Padding="30,10,30,10"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btn6" Text="1-6" Clicked="btn6_Clicked" />
+            <Button x:Name="btn12" Text="1-12" Clicked="btn12_Clicked" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
